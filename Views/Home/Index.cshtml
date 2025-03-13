@@ -2,7 +2,56 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог цифровых устройств</title>
+    <link rel="stylesheet" href="~/css/home.css"> <!-- Ссылка на CSS файл -->
+</head>
+<body>
+
+    <header>
+        <div class="refs">
+            <h1>Каталог цифровых устройств</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Устройство 1">
+            <h2>Устройство 1</h2>
+            <p>Описание устройства 1. Это отличный продукт!</p>
+            <p><strong>Цена: 10000₽</strong></p>
+            <button class="buy-button">Купить</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Устройство 2">
+            <h2>Устройство 2</h2>
+            <p>Описание устройства 2. Высокое качество и надежность!</p>
+            <p><strong>Цена: 15000₽</strong></p>
+            <button class="buy-button">Купить</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Устройство 3">
+            <h2>Устройство 3</h2>
+            <p>Описание устройства 3. Идеально подходит для любых задач!</p>
+            <p><strong>Цена: 12000₽</strong></p>
+            <button class="buy-button">Купить</button>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="Устройство 4">
+            <h2>Устройство 4</h2>
+            <p>Описание устройства 4. Новейшие технологии в вашем распоряжении!</p>
+            <p><strong>Цена: 20000₽</strong></p>
+            <button class="buy-button">Купить</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
