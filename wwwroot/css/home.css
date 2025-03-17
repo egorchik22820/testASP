@@ -1,149 +1,59 @@
 ﻿body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f8;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #4CAF50;
+    background: #35424a;
     color: #ffffff;
-    padding: 20px;
+    padding: 10px 0;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.refs {
-    margin-bottom: 10px;
-}
-
-nav a {
-    margin: 0 15px;
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-    nav a:hover {
-        color: #ffd700;
-    }
-
-.container {
+.product-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     padding: 20px;
 }
 
-.card {
+.product-item {
     background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    padding: 20px;
-    width: 220px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: calc(25% - 40px); /* 4 колонки */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-    .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    .card img {
+    .product-item img {
         max-width: 100%;
-        border-radius: 15px;
+        height: auto;
+        border-radius: 5px;
     }
 
-.buy-button {
-    background-color: #4CAF50;
+button {
+    background: #35424a;
     color: white;
     border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: 10px;
     cursor: pointer;
-    body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f8;
+    border-radius: 3px;
 }
 
-header {
-    background-color: #4CAF50;
-    color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.refs {
-    margin-bottom: 10px;
-    color: black;
-}
-
-nav a {
-    margin: 0 15px;
-    color: #ffffff;
-}
-
-    nav a:hover {
-        color: #ffffff;
-    }
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-}
-
-.card {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    padding: 20px;
-    width: 220px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card img {
-    max-width: 100%;
-    border-radius: 15px;
-}
-
-.buy-button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-    .buy-button:hover {
-        background-color: #45a049; /* Темно-зеленый цвет при наведении */
+    button:hover {
+        background: #4e5b61;
     }
 
 footer {
-    background-color: #333;
-    color: white;
     text-align: center;
-    padding: 15px 0;
-    position: relative;
-    bottom: 0;
+    padding: 20px;
+    background: #35424a;
+    color: #ffffff;
+    position: fixed;
     width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-    margin-top: 20px; /* Отступ сверху для отделения от контента */
+    bottom: 0;
 }
-
